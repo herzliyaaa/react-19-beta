@@ -32,7 +32,7 @@ const Submenu = ({ items, isFinanceAccordionOpen, toggleFinanceAccordion }) => {
                 className="hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent text-sm text-slate-700 rounded-lg hover:bg-gray-100 dark:bg-[#1d195b] dark:hover:bg-gray-900 dark:text-slate-400 dark:hover:text-slate-300 dark:hs-accordion-active:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                 onClick={toggleFinanceAccordion}
               >
-                {item.icon}
+              
                 {item.text}
                 <ArrowLongDownIcon />
               </button>
@@ -52,7 +52,7 @@ const Submenu = ({ items, isFinanceAccordionOpen, toggleFinanceAccordion }) => {
             </>
           ) : (
             <StyledNavLink to={item.link}>
-              {item.icon}
+             
               {item.text}
             </StyledNavLink>
           )}
